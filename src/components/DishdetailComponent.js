@@ -44,7 +44,7 @@ class Dishdetails extends Component {
 	}
 
 	render(){
-		
+
 		if (this.props.dish != null) {
 			return(
 				<div className='container'>
