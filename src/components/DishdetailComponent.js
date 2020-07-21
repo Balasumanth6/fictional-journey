@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class Dishdetails extends Component {
 
@@ -12,11 +13,10 @@ class Dishdetails extends Component {
 					<CardText> {dish.description} </CardText>
 				</CardBody>
 			</Card>
-		)
+		);
 	}
 
 	renderComments(comments) {
-
 		if (comments != null) {
 			const commentbox = comments.map((cmnt) => {			
 				return (				
@@ -44,17 +44,25 @@ class Dishdetails extends Component {
 	}
 
 	render(){
-
 		if (this.props.dish != null) {
 			return(
 				<div className='container'>
 					<div className='row'>
-						<div className='col-12 col-md-5 mt-4'>
-							{this.renderDish(this.props.dish)}
+						<Breadcrumb>
+							<BreadcrumbItem><Link to='/home'> Home </Link></BreadcrumbItem>
+							<BreadcrumbItem><Link to='/menu'> Menu </Link></BreadcrumbItem>
+							<BreadcrumbItem active>{this.props.dish.name}</BreadcrumbItem>
+						</Breadcrumb>
+						<div className='col-12'>
+							<h3> {this.props.dish.name} </h3>
+							<hr />
 						</div>
+					</div>
+					<div className='row'>
+						<div className='col-12 col-md-5 mt-4'>{this.renderDish(this.props.dish)}</div>
 						<div className='col-12 col-md-5 mt-4 m-1'>
 							<h4> Comments </h4>
-							{this.renderComments(this.props.dish.comments)}
+							{this.renderComments(this.props.comments)}
 						</div>
 					</div>
 				</div>
