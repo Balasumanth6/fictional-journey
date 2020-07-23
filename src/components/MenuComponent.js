@@ -5,11 +5,10 @@ import { Link } from 'react-router-dom';
 function RenderMenuItems({ dish, onClick }) {
 	return (
 		<Card>
-			<Link to={`/menu/${dish.id}`} >
+			<Link to={`/menu/${dish.id}`}>
 				<CardImg width="100%" object src={dish.image} alt={dish.name} />
 				<CardImgOverlay>
 					<CardTitle><h5> {dish.name} </h5></CardTitle>
-					{/*<p> {dish.description} </p>*/}
 				</CardImgOverlay>
 			</Link>
 		</Card> 
@@ -41,7 +40,10 @@ const Menu = (props) => {
 				<div className='row'>
 					{menu}
 				</div>
-			</div> 
+				<br />
+				<br />
+			</div>
+
 		);
 }
 

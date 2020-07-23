@@ -65,6 +65,8 @@ class Dishdetails extends Component {
 							{this.renderComments(this.props.comments)}
 						</div>
 					</div>
+					<br />
+					<br />
 				</div>
 			);
 		}

@@ -28,6 +28,7 @@ function Footer(props) {
 	                    </address>
 	                </div>
 	                <div className="col-12 col-sm-4 align-self-center">
+	                	<br className='d-block d-sm-none' />
 	                    <div className="text-center">
 	                        <a className="btn btn-social-icon btn-google" href="http://google.com/+"><i className="fa fa-google-plus"></i></a>
 	                        <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook"></i></a>
@@ -40,6 +41,8 @@ function Footer(props) {
 	            </div>
 	            <div className="row justify-content-center">             
 	                <div className="col-auto">
+	                	<br />
+	                	<br className='d-none d-sm-block' />
 	                    <p>© Copyright 2018 Ristorante Con Fusion</p>
 	                </div>
 	            </div>
