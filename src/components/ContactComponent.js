@@ -131,12 +131,16 @@ class Contact extends Component {
                 </div>
 
                 <div className='row row-content'>
+
                     <div className='col-12'>
                         <h3>Send us your feedback</h3>
                     </div>
+
                     <div className='col-9'>
                         <br className='d-none d-md-block'/>
+
                         <Form onSubmit={this.handleSubmit}>
+
                             <FormGroup row>
                                 <Label htmlFor='firstname' md={2}> First Name </Label>
                                 <Col md={10}>
@@ -146,6 +150,7 @@ class Contact extends Component {
                                     <FormFeedback> {errors.firstname} </FormFeedback>
                                 </Col>  
                             </FormGroup>
+
                             <FormGroup row>
                                 <Label htmlFor='lastname' md={2}> Last Name </Label>
                                 <Col md={10}>
@@ -155,6 +160,7 @@ class Contact extends Component {
                                     <FormFeedback> {errors.lastname} </FormFeedback>
                                 </Col>
                             </FormGroup>
+
                             <FormGroup row>
                                 <Label htmlFor='telnum' md={2}> Contact Tel. </Label>
                                 <Col md={10}>
@@ -164,6 +170,7 @@ class Contact extends Component {
                                     <FormFeedback> {errors.telnum} </FormFeedback>
                                 </Col>
                             </FormGroup>
+
                             <FormGroup row>
                                 <Label htmlFor='email' md={2}> Email </Label>
                                 <Col md={10}>
@@ -173,6 +180,7 @@ class Contact extends Component {
                                     <FormFeedback> {errors.email} </FormFeedback>
                                 </Col>
                             </FormGroup>
+
                             <FormGroup row>
                                 <Col md={{size:6, offset:2}}>
                                     <FormGroup check>
@@ -189,17 +197,20 @@ class Contact extends Component {
                                     </Input>
                                 </Col>
                             </FormGroup>
+
                             <FormGroup row>
                                 <Label htmlFor='messege' md={2}> Your Feedback </Label>
                                 <Col md={10}>
                                     <Input type='textarea' id='messege' name='messege' rows='12' value={this.state.messege} onChange={this.handleInputChange} /> 
                                 </Col>
                             </FormGroup>
+
                             <FormGroup row>
                                 <Col md={{size:10, offset:2}}>
                                     <Button type='submit' color='primary'> Send Feedback </Button>
                                 </Col>
                             </FormGroup>
+                            
                         </Form>
                     </div>
                 </div>
