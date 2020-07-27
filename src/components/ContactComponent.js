@@ -4,13 +4,9 @@ import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
 const required = (val) => val && val.length;
-
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
-
-const minLength = (len) => (val) => (val) && (val.length >= len);
-
+const minLength = (len) => (val) => !(val) || (val.length >= len);
 const isNumber = (val) => !isNaN(Number(val));
-
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
 class Contact extends Component {
@@ -128,7 +124,7 @@ class Contact extends Component {
                         <h3>Send us your feedback</h3>
                     </div>
 
-                    <div className='col-9'>
+                    <div className='col-12 col-md-9'>
 
                         <br className='d-none d-md-block'/>
 
@@ -137,8 +133,7 @@ class Contact extends Component {
                             <Row className='form-group'>
                                 <Label htmlFor='firstname' md={2}> First Name </Label>
                                 <Col md={10}>
-                                    <Control.text model='.firstname' 
-                                        id='firstname' 
+                                    <Control.text model='.firstname' id='firstname' 
                                         className='form-control'
                                         name='firstname' 
                                         placeholder='Type Here'
@@ -161,8 +156,7 @@ class Contact extends Component {
                             <Row className='form-group'>
                                 <Label htmlFor='lastname' md={2}> Last Name </Label>
                                 <Col md={10}>
-                                    <Control.text model='.lastname' 
-                                        id='lastname' 
+                                    <Control.text model='.lastname' id='lastname' 
                                         className='form-control'
                                         name='lastname' 
                                         placeholder='Type Here' 
@@ -185,8 +179,7 @@ class Contact extends Component {
                             <Row className='form-group'>
                                 <Label htmlFor='telnum' md={2}> Contact Tel. </Label>
                                 <Col md={10}>
-                                    <Control.text model='.telnum' 
-                                        id='telnum' 
+                                    <Control.text model='.telnum' id='telnum' 
                                         className='form-control'
                                         name='telnum' 
                                         placeholder='Type Here'
@@ -211,8 +204,7 @@ class Contact extends Component {
                             <Row className='form-group'>
                                 <Label htmlFor='email' md={2}> Email </Label>
                                 <Col md={10}>
-                                    <Control.text model='.email' 
-                                        id='email' 
+                                    <Control.text model='.email' id='email' 
                                         className='form-control'
                                         name='email' 
                                         placeholder='Type Here'
@@ -235,8 +227,7 @@ class Contact extends Component {
                                     <div className='form-check'>
                                         <Label check>
                                             <Control.checkbox model='.agree' name='agree' 
-                                                    className='form-check-input'
-                                                    /> {' '}
+                                                    className='form-check-input' /> {' '}
                                             <strong> May we contact you? </strong>
                                         </Label>
                                     </div>
@@ -251,9 +242,9 @@ class Contact extends Component {
                             </Row>
 
                             <Row className='form-group'>
-                                <Label htmlFor='messege' md={2}> Your Feedback </Label>
+                                <Label htmlFor='message' md={2}> Your Feedback </Label>
                                 <Col md={10}>
-                                    <Control.textarea model='.messege' id='messege' name='messege' 
+                                    <Control.textarea model='.message' id='message' name='message' 
                                             rows='12' className='form-control' /> 
                                 </Col>
                             </Row>

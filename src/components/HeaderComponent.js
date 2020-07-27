@@ -24,10 +24,10 @@ class Header extends Component {
 		});
 	}
 
-	handleLogin() {
+	handleLogin(event) {
 		this.toggleModal();
 		alert('username: ' + this.username.value + ' Password: ' + this.password.value + ' Remember: ' + this.remember.checked);
-		// event.preventDefault();	
+		event.preventDefault();	
 	}
 
 	toggleNav() {
@@ -97,15 +97,18 @@ class Header extends Component {
 						<Form onSubmit={this.handleLogin}> 
 							<FormGroup>
 								<Label hmtlFor='username'> Username </Label>
-								<Input type='text' id='username' name='username' innerRef={(input) => this.username = input}/>
+								<Input type='text' id='username' name='username' 
+									innerRef={(input) => this.username = input}/>
 							</FormGroup>
 							<FormGroup>
 								<Label hmtlFor='password'> Password </Label>
-								<Input type='password' id='password' name='password' innerRef={(input) => this.password = input} />
+								<Input type='password' id='password' name='password' 
+									innerRef={(input) => this.password = input} />
 							</FormGroup>
 							<FormGroup check>
 								<Label check>
-									<Input type='checkbox' name='remember' innerRef={(input) => this.remember = input} />
+									<Input type='checkbox' name='remember' 
+										innerRef={(input) => this.remember = input} />
 									Remember Me
 								</Label>
 							</FormGroup>
