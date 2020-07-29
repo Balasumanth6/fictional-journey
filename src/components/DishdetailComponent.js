@@ -4,7 +4,11 @@ import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbIte
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
-function renderDish(dish){
+const required = (val) => val && val.length;
+const maxLength = (len) => (val) => !(val) || (val.length <= len);
+const minLength = (len) => (val) => !(val) || (val.length >= len);
+ 
+function RenderDish({dish}){
 
 	return (
 		<Card>
@@ -17,7 +21,7 @@ function renderDish(dish){
 	);
 }
 
-function renderComments(comments) {
+function RenderComments({comments, addComment, dishId}) {
 
 	if (comments != null) {
 		const commentbox = comments.map((cmnt) => {			
@@ -39,7 +43,7 @@ function renderComments(comments) {
 		return(
 			<React.Fragment>
 				<div> {commentbox} </div>
-				<CommentForm />
+				<CommentForm dishId={dishId} addComment={addComment} />
 			</React.Fragment>
 		);
 	}
@@ -51,10 +55,6 @@ function renderComments(comments) {
 	}
 }
 
-const required = (val) => val && val.length;
-const maxLength = (len) => (val) => !(val) || (val.length <= len);
-const minLength = (len) => (val) => !(val) || (val.length >= len);
- 
 class CommentForm extends Component {
 
 	constructor(props) {
@@ -75,9 +75,8 @@ class CommentForm extends Component {
 	}
 
 	handleSubmit(values) {
-		console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
         this.toggleModal();
+        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
 	}
 
 	render () {
@@ -187,12 +186,13 @@ function Dishdetails (props) {
 				</div>
 				<div className='row'>
 					<div className='col-12 col-md-5 mt-4'>
-						{renderDish(props.dish)}
+						<RenderDish dish={props.dish} />
 					</div>
 					<div className='col-12 col-md-5 mt-4 m-1'>
 						<h4> Comments </h4>
-						{renderComments(props.comments)}
-
+						<RenderComments comments={props.comments}
+							addComment={props.addComment}
+							dishId={props.dish.id} />
 					</div>
 				</div>
 				<br />
