@@ -46,6 +46,7 @@ class Header extends Component {
 							<Link to='/home'> <img src='assets/images/logo.png' height='30' width='41' alt='Ristorante ConFusion' /></Link>
 						</NavbarBrand>
 						<Collapse isOpen={this.state.isNavOpen} navbar>
+
 							<Nav navbar>
 								<NavItem>
 									<NavLink className='nav-link' to='/home'>
@@ -76,6 +77,7 @@ class Header extends Component {
 									</Button>
 								</NavItem>
 							</Nav>
+							
 						</Collapse>
 					</div>
 				</Navbar>

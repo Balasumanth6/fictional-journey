@@ -9,7 +9,8 @@ import About from './AboutComponent.js';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-const mapStateToProps = state => {
+const mapStateToProps = function(state) {
+
 	return {
 		dishes: state.dishes,
 		comments: state.comments, 
@@ -17,6 +18,7 @@ const mapStateToProps = state => {
 		leaders: state.leaders
 	};
 }
+
 
 class Main extends Component {
 

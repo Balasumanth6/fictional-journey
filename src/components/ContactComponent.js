@@ -125,7 +125,6 @@ class Contact extends Component {
                     </div>
 
                     <div className='col-12 col-md-9'>
-
                         <br className='d-none d-md-block'/>
 
                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>

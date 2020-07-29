@@ -69,7 +69,6 @@ class CommentForm extends Component {
 	}
 
 	toggleModal() {
-
 		this.setState({
 			isModalOpen: !this.state.isModalOpen
 		});
