@@ -1,0 +1,12 @@
+import React from 'react';
+
+export const Loading = () => {
+	
+	return (
+		<div className='col-12 text-center'>
+			<span className='fa fa-spinner fa-pulse fa-2x fa-fw text-primary'> </span>
+			<br />
+			<p> Loading ... </p>  
+		</div>
+	);
+}
