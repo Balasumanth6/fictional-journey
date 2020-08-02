@@ -23,7 +23,7 @@ function RenderDish({dish}){
 	);
 }
 
-function RenderComments({comments, addComment, dishId}) {
+function RenderComments({comments, postComment, dishId}) {
 
 	if (comments != null) {
 		const commentbox = comments.map((cmnt) => {			
@@ -45,7 +45,7 @@ function RenderComments({comments, addComment, dishId}) {
 		return(
 			<React.Fragment>
 				<div> {commentbox} </div>
-				<CommentForm dishId={dishId} addComment={addComment} />
+				<CommentForm dishId={dishId} postComment={postComment} />
 			</React.Fragment>
 		);
 	}
@@ -78,7 +78,7 @@ class CommentForm extends Component {
 
 	handleSubmit(values) {
         this.toggleModal();
-        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
+        this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
 	}
 
 	render () {
@@ -95,7 +95,7 @@ class CommentForm extends Component {
 			</Nav>
 
 			<Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-				<ModalHeader toggle={this.toggleModal}> Login </ModalHeader>
+				<ModalHeader toggle={this.toggleModal}> Add Comment </ModalHeader>
 					<ModalBody>
 
 						<LocalForm onSubmit={(values) => this.handleSubmit(values)}>
@@ -216,7 +216,7 @@ function Dishdetails (props) {
 					<div className='col-12 col-md-5 mt-4 m-1'>
 						<h4> Comments </h4>
 						<RenderComments comments={props.comments}
-							addComment={props.addComment}
+							postComment={props.postComment}
 							dishId={props.dish.id} />
 					</div>
 				</div>
