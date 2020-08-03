@@ -1,36 +1,70 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import {Loading} from './LoadingComponent.js';
+import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 function RenderLeader ({leader}) {
     return (
         <React.Fragment>
-            <Media left middle>
-                <Media object src={leader.image} alt={leader.name} />
-            </Media>
-            <Media body className='ml-5'> 
-                <Media heading>{leader.name}</Media>
-                <p><h6> {leader.designation} </h6></p>
-                <p> {leader.description} </p>
-            </Media>
+        <FadeTransform  in transformProps={{exitTransform: 'scale(0.5) translateY(-50%)'}}>
+            <Fade in>
+                <div className='row'>
+                    <Media left middle className='md-2'>
+                        <Media object src={baseUrl + leader.image} alt={leader.name} />
+                    </Media>
+                    <Media body className='ml-5 md-10'> 
+                        <Media heading>{leader.name}</Media>
+                        <p><h6> {leader.designation} </h6></p>
+                        <p> {leader.description} </p>
+                    </Media>
+                </div>
+            </Fade>
+        </FadeTransform>
         </React.Fragment>
     );
 }
 
 function About(props) {
 
-    const leaders = props.leaders.map((leader) => {
+    const leaders = props.leaders.leaders.map((leader) => {
         return (
             <div key={leader.id} className='container'>
                 <Media tag='li'>
-                    <RenderLeader leader={leader} />
+                    <Stagger in>
+                        <RenderLeader leader={leader} />
+                    </Stagger>
                 </Media>
             </div>
         );
     });
 
-    return(
+    if (props.leaders.isLoading) {
+        return (
+            <div className='container'>
+                <div className='row'>
+                    <Loading />
+                </div>
+            </div>
+        );
+    }
+
+    else if (props.leaders.errmess) {
+        return (
+            <div className='container'>
+                <div className='row'>
+                    <h4> {props.leaders.errmess} </h4>
+                </div>
+            </div>
+        );
+    }
+
+    else {
+        return(
+
         <div className="container">
+
             <div className="row">
                 <Breadcrumb>
                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
@@ -41,12 +75,15 @@ function About(props) {
                     <hr />
                 </div>                
             </div>
+
             <div className="row row-content">
+
                 <div className="col-12 col-md-6">
                     <h2>Our History</h2>
                     <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
                     <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
                 </div>
+
                 <div className="col-12 col-md-5">
                     <Card>
                         <CardHeader className="bg-primary text-white">Facts At a Glance</CardHeader>
@@ -64,6 +101,7 @@ function About(props) {
                         </CardBody>
                     </Card>
                 </div>
+
                 <div className="col-12">
                     <Card>
                         <CardBody className="bg-faded">
@@ -78,20 +116,27 @@ function About(props) {
                         </CardBody>
                     </Card>
                 </div>
+
             </div>
+
             <div className="row row-content">
+
                 <div className="col-12">
                     <h2>Corporate Leadership</h2>
                 </div>
+
                 <div className="col-12">
                     <Media list>
                         <br />
                         {leaders}
                     </Media>
                 </div>
+
             </div>
+
         </div>
     );
+    }
 }
 
 export default About;    

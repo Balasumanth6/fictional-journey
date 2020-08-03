@@ -4,7 +4,8 @@ import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbIte
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent.js';
-import {baseUrl} from '../shared/baseUrl'; 
+import { baseUrl } from '../shared/baseUrl';
+import { fadeTransform, Fade, Stagger } from 'react-animation-components'; 
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
@@ -13,13 +14,17 @@ const minLength = (len) => (val) => !(val) || (val.length >= len);
 function RenderDish({dish}){
 
 	return (
-		<Card>
-			<CardImg width="100%" object src={baseUrl + dish.image} alt={dish.name} />
-			<CardBody>
-				<CardTitle><h4> {dish.name} </h4></CardTitle>
-				<CardText> {dish.description} </CardText>
-			</CardBody>
-		</Card>
+		<fadeTransform in transformProps={{
+				exitTransform: 'scale(0.5) translateY(-50%)'
+			}} >
+			<Card>
+				<CardImg width="100%" object src={baseUrl + dish.image} alt={dish.name} />
+				<CardBody>
+					<CardTitle><h4> {dish.name} </h4></CardTitle>
+					<CardText> {dish.description} </CardText>
+				</CardBody>
+			</Card>
+		</fadeTransform>
 	);
 }
 
@@ -27,18 +32,20 @@ function RenderComments({comments, postComment, dishId}) {
 
 	if (comments != null) {
 		const commentbox = comments.map((cmnt) => {			
-			return (				
-				<p key={cmnt.id}>
-					<span> {cmnt.comment} </span>
-					<br /> 
-					<span> -- {cmnt.author} , &nbsp;			
-							{new Intl.DateTimeFormat("en-US",{
-								month: "short",
-								day: "2-digit",
-								year: 'numeric'
-							}).format(new Date (cmnt.date))} 
-					</span>
-				</p> 
+			return (			
+				<Fade in>	
+					<p key={cmnt.id}>
+						<span> {cmnt.comment} </span>
+						<br /> 
+						<span> -- {cmnt.author} , &nbsp;			
+								{new Intl.DateTimeFormat("en-US",{
+									month: "short",
+									day: "2-digit",
+									year: 'numeric'
+								}).format(new Date (cmnt.date))} 
+						</span>
+					</p> 
+				</Fade>
 			);
 		});
 
@@ -215,9 +222,11 @@ function Dishdetails (props) {
 					</div>
 					<div className='col-12 col-md-5 mt-4 m-1'>
 						<h4> Comments </h4>
+						<Stagger in>
 						<RenderComments comments={props.comments}
 							postComment={props.postComment}
 							dishId={props.dish.id} />
+						</Stagger>
 					</div>
 				</div>
 				<br />
