@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f48e4da8f55ba5300dd5b70d649b9a1",
+    "revision": "b6b045f7b36ded612ebbc534323c0e58",
     "url": "/fictional-journey/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fictional-journey/static/css/2.2e6e36b4.chunk.css"
   },
   {
-    "revision": "8e5795cae3b4cfca60b6",
+    "revision": "4cc8d63b65bcac8a4ffc",
     "url": "/fictional-journey/static/css/main.a37c2842.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fictional-journey/static/js/2.7a562be6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8e5795cae3b4cfca60b6",
-    "url": "/fictional-journey/static/js/main.bfb3d065.chunk.js"
+    "revision": "4cc8d63b65bcac8a4ffc",
+    "url": "/fictional-journey/static/js/main.bfca8cd7.chunk.js"
   },
   {
     "revision": "906041c4d71f0dc0b796",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fictional-journey/static/css/main.a37c2842.chunk.css",
-    "main.js": "/fictional-journey/static/js/main.bfb3d065.chunk.js",
-    "main.js.map": "/fictional-journey/static/js/main.bfb3d065.chunk.js.map",
+    "main.js": "/fictional-journey/static/js/main.bfca8cd7.chunk.js",
+    "main.js.map": "/fictional-journey/static/js/main.bfca8cd7.chunk.js.map",
     "runtime-main.js": "/fictional-journey/static/js/runtime-main.2d67a988.js",
     "runtime-main.js.map": "/fictional-journey/static/js/runtime-main.2d67a988.js.map",
     "static/css/2.2e6e36b4.chunk.css": "/fictional-journey/static/css/2.2e6e36b4.chunk.css",
     "static/js/2.7a562be6.chunk.js": "/fictional-journey/static/js/2.7a562be6.chunk.js",
     "static/js/2.7a562be6.chunk.js.map": "/fictional-journey/static/js/2.7a562be6.chunk.js.map",
     "index.html": "/fictional-journey/index.html",
-    "precache-manifest.bd36eda258e29818f007f4ecfe20dc0a.js": "/fictional-journey/precache-manifest.bd36eda258e29818f007f4ecfe20dc0a.js",
+    "precache-manifest.87a981461cc4c9c503813024a7ec9ed3.js": "/fictional-journey/precache-manifest.87a981461cc4c9c503813024a7ec9ed3.js",
     "service-worker.js": "/fictional-journey/service-worker.js",
     "static/css/2.2e6e36b4.chunk.css.map": "/fictional-journey/static/css/2.2e6e36b4.chunk.css.map",
     "static/css/main.a37c2842.chunk.css.map": "/fictional-journey/static/css/main.a37c2842.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.2e6e36b4.chunk.css",
     "static/js/2.7a562be6.chunk.js",
     "static/css/main.a37c2842.chunk.css",
-    "static/js/main.bfb3d065.chunk.js"
+    "static/js/main.bfca8cd7.chunk.js"
   ]
 }
