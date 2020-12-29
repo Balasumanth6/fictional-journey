@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/fictional-journey/static/css/main.a37c2842.chunk.css",
-    "main.js": "/fictional-journey/static/js/main.fd9da486.chunk.js",
-    "main.js.map": "/fictional-journey/static/js/main.fd9da486.chunk.js.map",
-    "runtime-main.js": "/fictional-journey/static/js/runtime-main.2d67a988.js",
-    "runtime-main.js.map": "/fictional-journey/static/js/runtime-main.2d67a988.js.map",
-    "static/css/2.2e6e36b4.chunk.css": "/fictional-journey/static/css/2.2e6e36b4.chunk.css",
-    "static/js/2.b1354bbd.chunk.js": "/fictional-journey/static/js/2.b1354bbd.chunk.js",
-    "static/js/2.b1354bbd.chunk.js.map": "/fictional-journey/static/js/2.b1354bbd.chunk.js.map",
-    "index.html": "/fictional-journey/index.html",
-    "precache-manifest.eb18d082e8c16af01286cb6457b7b243.js": "/fictional-journey/precache-manifest.eb18d082e8c16af01286cb6457b7b243.js",
-    "service-worker.js": "/fictional-journey/service-worker.js",
-    "static/css/2.2e6e36b4.chunk.css.map": "/fictional-journey/static/css/2.2e6e36b4.chunk.css.map",
-    "static/css/main.a37c2842.chunk.css.map": "/fictional-journey/static/css/main.a37c2842.chunk.css.map",
-    "static/js/2.b1354bbd.chunk.js.LICENSE.txt": "/fictional-journey/static/js/2.b1354bbd.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/fictional-journey/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/logo.png": "/fictional-journey/static/media/logo.eb267f35.png"
+    "main.css": "/fictional-journey/home/static/css/main.a37c2842.chunk.css",
+    "main.js": "/fictional-journey/home/static/js/main.f80c17b8.chunk.js",
+    "main.js.map": "/fictional-journey/home/static/js/main.f80c17b8.chunk.js.map",
+    "runtime-main.js": "/fictional-journey/home/static/js/runtime-main.0488cc9a.js",
+    "runtime-main.js.map": "/fictional-journey/home/static/js/runtime-main.0488cc9a.js.map",
+    "static/css/2.90d2301a.chunk.css": "/fictional-journey/home/static/css/2.90d2301a.chunk.css",
+    "static/js/2.b1354bbd.chunk.js": "/fictional-journey/home/static/js/2.b1354bbd.chunk.js",
+    "static/js/2.b1354bbd.chunk.js.map": "/fictional-journey/home/static/js/2.b1354bbd.chunk.js.map",
+    "index.html": "/fictional-journey/home/index.html",
+    "precache-manifest.9ae6af7018bd071887c8537e9e1813aa.js": "/fictional-journey/home/precache-manifest.9ae6af7018bd071887c8537e9e1813aa.js",
+    "service-worker.js": "/fictional-journey/home/service-worker.js",
+    "static/css/2.90d2301a.chunk.css.map": "/fictional-journey/home/static/css/2.90d2301a.chunk.css.map",
+    "static/css/main.a37c2842.chunk.css.map": "/fictional-journey/home/static/css/main.a37c2842.chunk.css.map",
+    "static/js/2.b1354bbd.chunk.js.LICENSE.txt": "/fictional-journey/home/static/js/2.b1354bbd.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/fictional-journey/home/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.png": "/fictional-journey/home/static/media/logo.eb267f35.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2d67a988.js",
-    "static/css/2.2e6e36b4.chunk.css",
+    "static/js/runtime-main.0488cc9a.js",
+    "static/css/2.90d2301a.chunk.css",
     "static/js/2.b1354bbd.chunk.js",
     "static/css/main.a37c2842.chunk.css",
-    "static/js/main.fd9da486.chunk.js"
+    "static/js/main.f80c17b8.chunk.js"
   ]
 }
