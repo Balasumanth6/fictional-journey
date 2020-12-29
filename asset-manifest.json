@@ -1,26 +1,27 @@
 {
   "files": {
     "main.css": "/fictional-journey/static/css/main.a37c2842.chunk.css",
-    "main.js": "/fictional-journey/static/js/main.85bdbc73.chunk.js",
-    "main.js.map": "/fictional-journey/static/js/main.85bdbc73.chunk.js.map",
+    "main.js": "/fictional-journey/static/js/main.fd9da486.chunk.js",
+    "main.js.map": "/fictional-journey/static/js/main.fd9da486.chunk.js.map",
     "runtime-main.js": "/fictional-journey/static/js/runtime-main.2d67a988.js",
     "runtime-main.js.map": "/fictional-journey/static/js/runtime-main.2d67a988.js.map",
     "static/css/2.2e6e36b4.chunk.css": "/fictional-journey/static/css/2.2e6e36b4.chunk.css",
-    "static/js/2.7a562be6.chunk.js": "/fictional-journey/static/js/2.7a562be6.chunk.js",
-    "static/js/2.7a562be6.chunk.js.map": "/fictional-journey/static/js/2.7a562be6.chunk.js.map",
+    "static/js/2.b1354bbd.chunk.js": "/fictional-journey/static/js/2.b1354bbd.chunk.js",
+    "static/js/2.b1354bbd.chunk.js.map": "/fictional-journey/static/js/2.b1354bbd.chunk.js.map",
     "index.html": "/fictional-journey/index.html",
-    "precache-manifest.9da8b4b08b3593217f166462a2183463.js": "/fictional-journey/precache-manifest.9da8b4b08b3593217f166462a2183463.js",
+    "precache-manifest.eb18d082e8c16af01286cb6457b7b243.js": "/fictional-journey/precache-manifest.eb18d082e8c16af01286cb6457b7b243.js",
     "service-worker.js": "/fictional-journey/service-worker.js",
     "static/css/2.2e6e36b4.chunk.css.map": "/fictional-journey/static/css/2.2e6e36b4.chunk.css.map",
     "static/css/main.a37c2842.chunk.css.map": "/fictional-journey/static/css/main.a37c2842.chunk.css.map",
-    "static/js/2.7a562be6.chunk.js.LICENSE.txt": "/fictional-journey/static/js/2.7a562be6.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/fictional-journey/static/media/fontawesome-webfont.fee66e71.woff"
+    "static/js/2.b1354bbd.chunk.js.LICENSE.txt": "/fictional-journey/static/js/2.b1354bbd.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/fictional-journey/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.png": "/fictional-journey/static/media/logo.eb267f35.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2d67a988.js",
     "static/css/2.2e6e36b4.chunk.css",
-    "static/js/2.7a562be6.chunk.js",
+    "static/js/2.b1354bbd.chunk.js",
     "static/css/main.a37c2842.chunk.css",
-    "static/js/main.85bdbc73.chunk.js"
+    "static/js/main.fd9da486.chunk.js"
   ]
 }

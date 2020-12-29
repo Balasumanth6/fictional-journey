@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "650824a04710536851f0a671892e326d",
+    "revision": "211915a9d010489fbfbe782b2d6a6ea3",
     "url": "/fictional-journey/index.html"
   },
   {
-    "revision": "25bdaa8f1f3990e6fda2",
+    "revision": "9e50db757dce5516302c",
     "url": "/fictional-journey/static/css/2.2e6e36b4.chunk.css"
   },
   {
-    "revision": "1ba6ca8b5db1ad91caac",
+    "revision": "8d56a89e739fafa066e8",
     "url": "/fictional-journey/static/css/main.a37c2842.chunk.css"
   },
   {
-    "revision": "25bdaa8f1f3990e6fda2",
-    "url": "/fictional-journey/static/js/2.7a562be6.chunk.js"
+    "revision": "9e50db757dce5516302c",
+    "url": "/fictional-journey/static/js/2.b1354bbd.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/fictional-journey/static/js/2.7a562be6.chunk.js.LICENSE.txt"
+    "url": "/fictional-journey/static/js/2.b1354bbd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ba6ca8b5db1ad91caac",
-    "url": "/fictional-journey/static/js/main.85bdbc73.chunk.js"
+    "revision": "8d56a89e739fafa066e8",
+    "url": "/fictional-journey/static/js/main.fd9da486.chunk.js"
   },
   {
     "revision": "906041c4d71f0dc0b796",
@@ -46,5 +46,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/fictional-journey/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  {
+    "revision": "eb267f35256591eb7733b73c0455dbfe",
+    "url": "/fictional-journey/static/media/logo.eb267f35.png"
   }
 ]);
