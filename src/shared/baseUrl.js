@@ -1,2 +1,2 @@
-export const baseUrl = 'http://https://balasumanth6.github.io/fictional-journey/db.json';
+export const baseUrl = 'https://raw.githubusercontent.com/Balasumanth6/fictional-journey/master/db.json';
 
