@@ -4,8 +4,7 @@ import {baseUrl} from '../shared/baseUrl';
 
 
 
-
-
+	//Adding a Comment
 
 export const addComment = (comment) => ({
 
@@ -24,7 +23,7 @@ export const postComment = (dishId, rating, author, comment) => (dispatch) => {
 
 	newComment.date = new Date().toISOString();
 
-	return fetch(baseUrl + 'comments', {
+	return fetch(baseUrl + 'comments/', {
 		method: 'POST',
 		body: JSON.stringify(newComment),
 		headers: { 'Content-Type': 'application/json' },
@@ -52,6 +51,14 @@ export const postComment = (dishId, rating, author, comment) => (dispatch) => {
 		})
 }
 
+
+
+
+
+
+
+
+
 export const postFeedback = (values) => (dispatch) => {
 
 	const newFeedback = {
@@ -67,7 +74,7 @@ export const postFeedback = (values) => (dispatch) => {
 
 	newFeedback.date = new Date().toISOString();
 
-	return fetch(baseUrl + 'feedback', {
+	return fetch(baseUrl + 'feedback/', {
 		method: 'POST',
 		body: JSON.stringify(newFeedback),
 		headers: { 'Content-Type': 'application/json' },
@@ -114,7 +121,7 @@ export const fetchDishes = () => (dispatch) => {
 	// 	dispatch(addDishes(DISHES));
 	// }, 2000);
 
-	return fetch(baseUrl + 'dishes')
+	return fetch(baseUrl + 'dishes/')
 		.then(response => {
 			if (response.ok) {
 				return response;
@@ -165,7 +172,7 @@ export const addDishes = (dishes) => ({
 
 export const fetchComments = () => (dispatch) => {
 
-	return fetch(baseUrl + 'comments')
+	return fetch(baseUrl + 'comments/')
 
 		.then(response => {
 			if (response.ok) {
@@ -213,7 +220,7 @@ export const fetchPromos = () => (dispatch) => {
 
 	dispatch(promosLoading(true));
 
-	return fetch(baseUrl + 'promotions')
+	return fetch(baseUrl + 'promotions/')
 
 		.then(response => {
 			if (response.ok) {
@@ -265,7 +272,7 @@ export const fetchLeaders = () => (dispatch) => {
 
 	dispatch(leadersLoading(true));
 
-	return fetch(baseUrl + 'leaders')
+	return fetch(baseUrl + 'leaders/')
 		.then(response => {
 			if (response.ok) {
 				return response;

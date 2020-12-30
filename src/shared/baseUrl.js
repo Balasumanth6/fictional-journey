@@ -1,2 +1,2 @@
-export const baseUrl = 'http://localhost:3001/';
+export const baseUrl = 'https://ris-confu-default-rtdb.firebaseio.com/';
 

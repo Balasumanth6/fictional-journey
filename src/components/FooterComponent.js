@@ -15,7 +15,7 @@ function Footer(props) {
 	                        <li><Link to="/contactus">Contact</Link></li>
 	                    </ul>
 	                </div>
-	                <div className="col-7 col-sm-5">
+	                <div className="col-5 col-sm-5 offset-1">
 	                    <h5>Our Address</h5>
 	                    <address>
 			              121, Clear Water Bay Road<br />
@@ -27,7 +27,7 @@ function Footer(props) {
 	                         confusion@food.net</a>
 	                    </address>
 	                </div>
-	                <div className="col-12 col-sm-4 align-self-center">
+	                <div className="col-12 col-sm-3 align-self-center">
 	                	<br className='d-block d-sm-none' />
 	                    <div className="text-center">
 	                        <a className="btn btn-social-icon btn-google" href="http://google.com/+"><i className="fa fa-google-plus"></i></a>
