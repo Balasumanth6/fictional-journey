@@ -125,7 +125,7 @@ class Contact extends Component {
                     </div>
 
                     <div className='col-12 col-md-9'>
-                        <br className='d-none d-md-block'/>
+                        <br />
 
                         <Form model='feedback' onSubmit={(values) => this.handleSubmit(values)}>
 
